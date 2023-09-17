@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ 
+            background-image: url('./sky.jpg');
+
+        }
+        .parent1{
+            position: relative;
+    top: 0;
+    left: 0;
+
+        }
+        .img{
+           
+              
+              
+               position: relative;
+              top: 0px;
+              left: 0px;
+             /* background-repeat: repeat-x;
+            animation: city 5s linear infinite; */
+            }
+            /* @keyframes city
+            {
+                100%{
+        transform: translatex(-1400px);
+    }
+
+            } */
+        .imgg{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        #parent{
+           
+            position: relative;
+    top: 0;
+    left: 0;
+}
+
+.img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: repeat-x;
+  animation: road 5s linear infinite;
+
+ }
+  @keyframes road{
+    100%{
+        transform: translate(-3400px);
+    }
+  }
+
+.img2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+}
+.img3{
+    
+  top: 30px;
+  left: 30px;
+  /* transform: translateX(-50%); */
+  position: absolute;
+  animation: wheel 1s linear infinite;
+}
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.img4{
+    position: absolute;
+  top: 30px;
+  left: 30px;
+  animation: wheel2 1s linear infinite;
+
+}
+@keyframes wheel2{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.img5{
+    height: 50px;
+    width: 50px;
+    
+    animation: sun 40s linear infinite;
+    float: right;
+}
+@keyframes sun{
+    100%{
+        transform: translate(-1400px);
+    }
+}
+
+        
+      
+    </style>
+</head>
+<body>
+    
+    <img class="img5" src="./sun.png" height="100px" width="100px">
+    <img class="img" src="./city.png" style="padding-top: 0px;">
+<div class="parent1">
+    
+    <img class="imgg" src="./flag.png" height="100px" width="100px" style="margin-left: 690px; margin-top: 60px;">
+</div>
+    
+    <div id="parent">
+        <img class="img1"  src="./road.jpg">
+       
+        <img class="img2"  src="./car.png" height="250px" width="600px" style="padding:0px; margin: 0px;">
+        <img class="img3"  src="./wheel.png"  height="110px" width="110px" style="margin-left: 420px; margin-top: 130px;">
+        <img class="img4"  src="./wheel.png" height="110px" width="110px" style="margin-left: 50px; margin-top: 130px;">
+
+    </div>
+   
+    
+</body>
+</html>
